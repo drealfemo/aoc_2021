@@ -70,11 +70,7 @@ if __name__ == '__main__':
     boards_scores = [[] for _ in boards]
     winning_boards_order = []
     for i, num in enumerate(numbers_order):
-        if num == '13':
-            er = 2
         for j, board in enumerate(boards):
-            if j == 1:
-                errr = 65
             for k, row in enumerate(board):
                 for l, val in enumerate(row):
                     if num == val:
