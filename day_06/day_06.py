@@ -30,7 +30,7 @@ from collections import Counter
 
 def number_of_fish_after_period(fish, days=80):
     fish = Counter(fish)
-    for i in range(days):
+    for _ in range(days):
         new_fish = fish[0]
         for i in range(8):
             fish[i] = fish[i + 1]
