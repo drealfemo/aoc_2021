@@ -5,7 +5,7 @@ import sys
 if __name__ == '__main__':
     with open(os.path.join(sys.path[0], "input.txt")) as f:
         input_list = list(map(int, [x.split(",") for x in f.read().splitlines()][0]))
-    possible_pos = [x for x in range(min(*input_list), int(max(*input_list)/2))]
+    possible_pos = [x for x in range(min(*input_list), int(max(*input_list)/3))]
 
     # part one
     fuel_cost = 9999999999999
