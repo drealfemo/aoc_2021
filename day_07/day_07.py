@@ -10,8 +10,8 @@ if __name__ == '__main__':
     # part one
     fuel_cost = 9999999999999
     for v in possible_pos:
-        b = sum([abs(x-v) for x in input_list])
-        if (cost := b) < fuel_cost:
+        cost = sum([abs(x-v) for x in input_list])
+        if cost < fuel_cost:
             fuel_cost = cost
     print(fuel_cost)
 
@@ -19,7 +19,7 @@ if __name__ == '__main__':
     fuel_cost = 9999999999999
     for v in possible_pos:
         b = [abs(x - v) for x in input_list]
-        c = sum([sum([y for y in range(1, x+1)]) for x in b])
-        if (cost := c) < fuel_cost:
+        cost = sum([sum([y for y in range(1, x+1)]) for x in b])
+        if cost < fuel_cost:
             fuel_cost = cost
     print(fuel_cost)
